@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>{{ title }} | {{ site_name }}</title>
+    {{ vite src="resources/js/app.js|resources/css/app.css" }}
+  </head>
+  <body>
+    Heya!!!
+    {{ template_content }}
+    <footer>
+      &copy; {{ now format="Y" }} {{ site_name }}
+    </footer>
+    <script src="/js/site.js"></script>
+  </body>
+</html>

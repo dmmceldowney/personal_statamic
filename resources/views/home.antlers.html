@@ -1,0 +1,35 @@
+<h1>David McEldowney</h1>
+<h2>Senior Full-Stack Software Engineer</h2>
+<p>
+    {{ summary }}
+</p>
+<div>
+    <h4>Work History</h4>
+    {{ work_history }}
+    <div>
+        <div>
+            <h2>{{ job_title }}</h2>
+        </div>
+        <div>
+            <a href="{{ url }}">{{ employer }}</a>
+        </div>
+        <div>
+            <div>
+                <strong>Start Date:</strong>{{ start_date }}<br><strong>End Date:</strong> {{ end_date ?? 'current' }}
+            </div>
+        </div>
+        <div>
+            {{ duties }}
+        </div>
+    </div>
+    {{ /work_history }}
+</div>
+
+<div>
+    <h4>Skills</h4>
+    <ul>
+        {{ skills }}
+        <li>{{ value }}</li>
+        {{ /skills }}
+    </ul>
+</div>

@@ -1,0 +1,265 @@
+title: 'Home Page'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: slug_field
+            field:
+              from: title
+              generate: true
+              show_regenerate: false
+              type: slug
+              display: Slug
+              icon: slug
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: summary
+            field:
+              antlers: false
+              type: textarea
+              display: Summary
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: work_history
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: employer
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Employer
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: start_date
+                          field:
+                            mode: single
+                            inline: false
+                            full_width: false
+                            columns: 1
+                            rows: 1
+                            time_enabled: false
+                            time_seconds_enabled: false
+                            type: date
+                            display: 'Start Date'
+                            icon: date
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: end_date
+                          field:
+                            mode: single
+                            inline: false
+                            full_width: false
+                            columns: 1
+                            rows: 1
+                            time_enabled: false
+                            time_seconds_enabled: false
+                            type: date
+                            display: 'End Date'
+                            icon: date
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: job_title
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'Job Title'
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: url
+                          field:
+                            type: link
+                            display: url
+                            icon: link
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: duties
+                          field:
+                            restrict: false
+                            buttons:
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - quote
+                              - link
+                              - image
+                              - table
+                            automatic_line_breaks: true
+                            automatic_links: false
+                            escape_markup: false
+                            heading_anchors: false
+                            smartypants: false
+                            table_of_contents: false
+                            antlers: false
+                            type: markdown
+                            display: duties
+                            icon: markdown
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: 'Work History'
+              icon: replicator
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: skills
+            field:
+              type: list
+              display: Skills
+              icon: list
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: hobbies
+            field:
+              type: list
+              display: Hobbies
+              icon: list
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: contact_information
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: label
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Label
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: slug_field
+                          field:
+                            from: title
+                            generate: true
+                            show_regenerate: false
+                            type: slug
+                            display: Slug
+                            icon: slug
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: url
+                          field:
+                            type: link
+                            display: URL
+                            icon: link
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: 'Contact Information'
+              icon: replicator
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

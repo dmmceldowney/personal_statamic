@@ -4,7 +4,7 @@ blueprint: home_page
 title: Home
 template: home
 updated_by: d5e09d10-1650-4f49-80f4-9a392edf78d4
-updated_at: 1706828708
+updated_at: 1706846280
 skills:
   - 'Full-stack development with PHP, Laravel, & Vue.js'
   - 'Agile practices including ceremonial meetings, sprint planning and execution, code reviews, and unit testing'
@@ -57,4 +57,12 @@ work_history:
     enabled: true
     duties: 'Managed databases for Royal Dutch Shell, assigning loyalty discounts, performing ETL, scheduling automated reports, and creating interfaces to interact with the data.'
 summary: 'Experienced Senior Software Engineer with a proven track record in architecting and developing SaaS solutions. Proficient in full-stack engineering, agile methodologies, and leading teams to successful project completion. Demonstrates expertise in PHP, Laravel, and Javascript with a strong background in API integration, database management, and Agile coding practices.'
+contact_information:
+  -
+    id: ls445f3m
+    label: LinkedIn
+    slug_field: linked_in
+    url: 'https://www.linkedin.com/in/dmmceldowney'
+    type: new_set
+    enabled: true
 ---

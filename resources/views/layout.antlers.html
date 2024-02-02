@@ -1,13 +1,14 @@
 <html>
   <head>
-    <title>{{ title }} | {{ site_name }}</title>
+    <title>{{ title }} | {{ site:name }} </title>
     {{ vite src="resources/js/app.js|resources/css/app.css" }}
   </head>
   <body>
+    {{ partial:header }}
+
     {{ template_content }}
-    <footer>
-      &copy; {{ now format="Y" }} {{ site_name }}
-    </footer>
+
+    {{ partial:footer }}
     <script src="/js/site.js"></script>
   </body>
 </html>

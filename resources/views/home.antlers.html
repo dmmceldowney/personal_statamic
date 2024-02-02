@@ -1,10 +1,6 @@
 <div class="container mx-auto p-6">
     <div class="grid grid-cols-3 gap-8">
         <div class="col-span-2 pl-20">
-            <div class="pb-4">
-                <h4 class="text-3xl pb-2">Summary</h4>
-                <p>{{ summary }}</p>
-            </div>
             <div>
                 <h4 class="text-4xl pb-2">Work History</h4>
                 {{ work_history }}
@@ -29,12 +25,26 @@
             </div>
         </div>
         <div class="pr-20">
-            <h4 class="text-4xl pb-3">Skills</h4>
-            <ul class="pl-5">
-                {{ skills }}
-                <li class="list-disc">{{ value }}</li>
-                {{ /skills }}
-            </ul>
+            <div class="pb-8">
+                <h4 class="text-3xl pb-2">Summary</h4>
+                <p class="text-sm">{{ summary }}</p>
+            </div>
+            <div class="pb-8">
+                <h4 class="text-3xl pb-3">Skills</h4>
+                <ul class="pl-5">
+                    {{ skills }}
+                        <li class="list-disc">{{ value }}</li>
+                    {{ /skills }}
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-3xl pb-3">Hobbies</h4>
+                <ul class="pl-5">
+                    {{ hobbies }}
+                        <li class="list-disc">{{ value }}</li>
+                    {{ /hobbies }}
+                </ul>
+            </div>
         </div>
     </div>
 </div>

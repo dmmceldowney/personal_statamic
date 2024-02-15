@@ -2,7 +2,7 @@
 id: d769280b-4d36-4d83-adb1-ba907ad5b547
 blueprint: home_page
 title: Home
-template: home
+template: resume
 updated_by: d5e09d10-1650-4f49-80f4-9a392edf78d4
 updated_at: 1706854256
 skills:
